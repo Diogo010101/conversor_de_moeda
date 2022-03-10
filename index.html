@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="css/stylus.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+   
+
+    <content clas="flex-container" id="form_conversor" >
+        <h1 class="flex-item">Conversor de Dolar</h1>
+        <label for="moeda"></label>
+        <input type="number" id="valor_moeda" size="2" required placeholder="Valor que deseja converter" class="flex-item"/>
+        <p class="flex-item">Selecione a Moeda</p>
+        <select name="tipo" id="tipo_moeda" class="flex-item" required>
+            <option value="real">Real R$</option>
+            <option value="euro">Euro €</option>
+            <option value="bitcoin">Bit Coin</option>
+        </select>
+        <button class="flex-item" type="submit" onclick="ConverterNovo()">CONVERTER</button>
+        <div id="valorDeSaida" class="flex-item result">
+        <h1></h1>
+        </div>
+
+        <figure class="flex-item img_moedas">
+            <img src="img/imagem-moedas-png.png" alt="Moedas" class="img-fluid">
+        </figure>
+    </content>
+
+
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+</body>
+</html>
